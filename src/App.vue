@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="title">vue admin</div>
+  <RouterView></RouterView>
 </template>
 
 <style scoped lang="scss">
-.title {
-  color: red;
-}
+  .title {
+    color: red;
+  }
 </style>
