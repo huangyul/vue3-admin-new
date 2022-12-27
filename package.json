@@ -9,6 +9,7 @@
     "cz": "git add . && npx git-cz"
   },
   "dependencies": {
+    "element-plus": "^2.2.27",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
