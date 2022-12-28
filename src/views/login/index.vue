@@ -6,6 +6,7 @@
   <div class="login-container">
     <div class="login-box">
       <TypeIt :values="['xxxx']" :cursor="false" :speed="150"></TypeIt>
+      {{ $t('test.name') }}
       <el-button>1232</el-button>
     </div>
   </div>
