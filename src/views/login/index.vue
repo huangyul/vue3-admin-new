@@ -1,5 +1,8 @@
 <script setup lang="ts">
   import TypeIt from '@/components/ReTypeit'
+  import { useTestStore } from '@/store/test'
+
+  const testStore = useTestStore()
 </script>
 
 <template>
@@ -7,18 +10,18 @@
     <div class="login-box">
       <TypeIt :values="['xxxx']" :cursor="false" :speed="150"></TypeIt>
       {{ $t('test.name') }}
+      <p>{{ testStore.$state.value }}</p>
       <el-button>1232</el-button>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.login-container {
-  width: 100vw;
-  height: 100vh;
-  .login-box {
-    width: 100%;
-
+  .login-container {
+    width: 100vw;
+    height: 100vh;
+    .login-box {
+      width: 100%;
+    }
   }
-}
 </style>
