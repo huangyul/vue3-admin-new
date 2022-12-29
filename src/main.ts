@@ -3,10 +3,9 @@ import App from './App.vue'
 import router from '@/router'
 import ElementPlus from 'element-plus'
 import '@/styles/index.scss'
-import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+import zhCn from 'element-plus/lib/locale/lang/zh-cn'
 import { i18n } from '@/plugins/i18n'
 import { createPinia } from 'pinia'
-
 
 // 引入重置样式
 import '@/styles/reset.scss'

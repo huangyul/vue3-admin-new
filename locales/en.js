@@ -1,5 +1,5 @@
 export default {
   test: {
-    name: 'test',
+    name: 'test12',
   },
 }

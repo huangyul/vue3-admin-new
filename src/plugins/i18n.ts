@@ -10,16 +10,12 @@ function shiponI18n(prefix = 'zh-CN') {
   return Object.fromEntries(
     Object.entries(import.meta.glob('../../locales/*.js', { eager: true })).map(
       ([key, value]: any) => {
-        console.log(key)
         const matched = key.match(/([A-Za-z0-9-_]+)\./i)[1]
-        console.log(matched)
         return [matched, value.default]
       }
     )
   )[prefix]
 }
-
-console.log(shiponI18n())
 
 const localesConfigs = {
   zh: {
